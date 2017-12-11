@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3B77291F1FDEDD4B00CEC193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B77291E1FDEDD4B00CEC193 /* AppDelegate.swift */; };
-		3B7729211FDEDD4B00CEC193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7729201FDEDD4B00CEC193 /* ViewController.swift */; };
 		3B7729241FDEDD4B00CEC193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7729221FDEDD4B00CEC193 /* Main.storyboard */; };
 		3B7729271FDEDD4B00CEC193 /* SportNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B7729251FDEDD4B00CEC193 /* SportNews.xcdatamodeld */; };
 		3B7729291FDEDD4B00CEC193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7729281FDEDD4B00CEC193 /* Assets.xcassets */; };
 		3B77292C1FDEDD4B00CEC193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B77292A1FDEDD4B00CEC193 /* LaunchScreen.storyboard */; };
 		3B7729371FDEDD4B00CEC193 /* NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7729361FDEDD4B00CEC193 /* NewsTests.swift */; };
+		3B7729431FDEE24F00CEC193 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7729421FDEE24F00CEC193 /* MainViewController.swift */; };
+		3B7729441FDEE24F00CEC193 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7729421FDEE24F00CEC193 /* MainViewController.swift */; };
+		3B77294A1FDEE40800CEC193 /* newsapi.org.cer in Resources */ = {isa = PBXBuildFile; fileRef = 3B7729491FDEE40800CEC193 /* newsapi.org.cer */; };
+		3B77294B1FDEE40800CEC193 /* newsapi.org.cer in Resources */ = {isa = PBXBuildFile; fileRef = 3B7729491FDEE40800CEC193 /* newsapi.org.cer */; };
+		3B77294D1FDEE43100CEC193 /* NetworkServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B77294C1FDEE43100CEC193 /* NetworkServiceManager.swift */; };
+		3B77294E1FDEE43100CEC193 /* NetworkServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B77294C1FDEE43100CEC193 /* NetworkServiceManager.swift */; };
+		3B7729551FDEE51400CEC193 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7729511FDEE51400CEC193 /* Alamofire.framework */; };
+		3B7729561FDEE51400CEC193 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7729521FDEE51400CEC193 /* Kingfisher.framework */; };
+		3B7729571FDEE51400CEC193 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7729531FDEE51400CEC193 /* RxSwift.framework */; };
+		3B7729581FDEE51400CEC193 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7729541FDEE51400CEC193 /* RxCocoa.framework */; };
+		3B77295A1FDEE52C00CEC193 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7729591FDEE52C00CEC193 /* CoreData.framework */; };
+		3B77295C1FDEE57800CEC193 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B77295B1FDEE57800CEC193 /* Resource.swift */; };
+		3B77295D1FDEE57800CEC193 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B77295B1FDEE57800CEC193 /* Resource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +41,6 @@
 /* Begin PBXFileReference section */
 		3B77291B1FDEDD4B00CEC193 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B77291E1FDEDD4B00CEC193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B7729201FDEDD4B00CEC193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B7729231FDEDD4B00CEC193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B7729261FDEDD4B00CEC193 /* News.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = News.xcdatamodel; sourceTree = "<group>"; };
 		3B7729281FDEDD4B00CEC193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +49,15 @@
 		3B7729321FDEDD4B00CEC193 /* NewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7729361FDEDD4B00CEC193 /* NewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTests.swift; sourceTree = "<group>"; };
 		3B7729381FDEDD4B00CEC193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7729421FDEE24F00CEC193 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3B7729491FDEE40800CEC193 /* newsapi.org.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = newsapi.org.cer; sourceTree = "<group>"; };
+		3B77294C1FDEE43100CEC193 /* NetworkServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceManager.swift; sourceTree = "<group>"; };
+		3B7729511FDEE51400CEC193 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3B7729521FDEE51400CEC193 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		3B7729531FDEE51400CEC193 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		3B7729541FDEE51400CEC193 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		3B7729591FDEE52C00CEC193 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3B77295B1FDEE57800CEC193 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +65,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B77295A1FDEE52C00CEC193 /* CoreData.framework in Frameworks */,
+				3B7729551FDEE51400CEC193 /* Alamofire.framework in Frameworks */,
+				3B7729561FDEE51400CEC193 /* Kingfisher.framework in Frameworks */,
+				3B7729571FDEE51400CEC193 /* RxSwift.framework in Frameworks */,
+				3B7729581FDEE51400CEC193 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +89,7 @@
 				3B77291D1FDEDD4B00CEC193 /* News */,
 				3B7729351FDEDD4B00CEC193 /* NewsTests */,
 				3B77291C1FDEDD4B00CEC193 /* Products */,
+				3B7729501FDEE51400CEC193 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,8 +105,12 @@
 		3B77291D1FDEDD4B00CEC193 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				3B7729481FDEE3F700CEC193 /* Certificates */,
+				3B7729471FDEE3B400CEC193 /* Managers */,
+				3B7729461FDEE3AE00CEC193 /* Models */,
+				3B7729451FDEE3A400CEC193 /* ViewModels */,
+				3B7729411FDEE1FC00CEC193 /* Views */,
 				3B77291E1FDEDD4B00CEC193 /* AppDelegate.swift */,
-				3B7729201FDEDD4B00CEC193 /* ViewController.swift */,
 				3B7729221FDEDD4B00CEC193 /* Main.storyboard */,
 				3B7729281FDEDD4B00CEC193 /* Assets.xcassets */,
 				3B77292A1FDEDD4B00CEC193 /* LaunchScreen.storyboard */,
@@ -99,6 +129,57 @@
 			path = NewsTests;
 			sourceTree = "<group>";
 		};
+		3B7729411FDEE1FC00CEC193 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B7729421FDEE24F00CEC193 /* MainViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B7729451FDEE3A400CEC193 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3B7729461FDEE3AE00CEC193 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B77295B1FDEE57800CEC193 /* Resource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B7729471FDEE3B400CEC193 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3B77294C1FDEE43100CEC193 /* NetworkServiceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3B7729481FDEE3F700CEC193 /* Certificates */ = {
+			isa = PBXGroup;
+			children = (
+				3B7729491FDEE40800CEC193 /* newsapi.org.cer */,
+			);
+			path = Certificates;
+			sourceTree = "<group>";
+		};
+		3B7729501FDEE51400CEC193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B7729591FDEE52C00CEC193 /* CoreData.framework */,
+				3B7729511FDEE51400CEC193 /* Alamofire.framework */,
+				3B7729521FDEE51400CEC193 /* Kingfisher.framework */,
+				3B7729541FDEE51400CEC193 /* RxCocoa.framework */,
+				3B7729531FDEE51400CEC193 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +190,7 @@
 				3B7729171FDEDD4B00CEC193 /* Sources */,
 				3B7729181FDEDD4B00CEC193 /* Frameworks */,
 				3B7729191FDEDD4B00CEC193 /* Resources */,
+				3B77294F1FDEE48F00CEC193 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B77294A1FDEE40800CEC193 /* newsapi.org.cer in Resources */,
 				3B77292C1FDEDD4B00CEC193 /* LaunchScreen.storyboard in Resources */,
 				3B7729291FDEDD4B00CEC193 /* Assets.xcassets in Resources */,
 				3B7729241FDEDD4B00CEC193 /* Main.storyboard in Resources */,
@@ -192,18 +275,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B77294B1FDEE40800CEC193 /* newsapi.org.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B77294F1FDEE48F00CEC193 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B7729171FDEDD4B00CEC193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B7729211FDEDD4B00CEC193 /* ViewController.swift in Sources */,
+				3B77294D1FDEE43100CEC193 /* NetworkServiceManager.swift in Sources */,
+				3B7729431FDEE24F00CEC193 /* MainViewController.swift in Sources */,
 				3B7729271FDEDD4B00CEC193 /* SportNews.xcdatamodeld in Sources */,
+				3B77295C1FDEE57800CEC193 /* Resource.swift in Sources */,
 				3B77291F1FDEDD4B00CEC193 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7729371FDEDD4B00CEC193 /* NewsTests.swift in Sources */,
+				3B77295D1FDEE57800CEC193 /* Resource.swift in Sources */,
+				3B7729441FDEE24F00CEC193 /* MainViewController.swift in Sources */,
+				3B77294E1FDEE43100CEC193 /* NetworkServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +468,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -373,6 +487,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
