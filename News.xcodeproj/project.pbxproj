@@ -10,7 +10,7 @@
 		3B77291F1FDEDD4B00CEC193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B77291E1FDEDD4B00CEC193 /* AppDelegate.swift */; };
 		3B7729211FDEDD4B00CEC193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7729201FDEDD4B00CEC193 /* ViewController.swift */; };
 		3B7729241FDEDD4B00CEC193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7729221FDEDD4B00CEC193 /* Main.storyboard */; };
-		3B7729271FDEDD4B00CEC193 /* News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B7729251FDEDD4B00CEC193 /* News.xcdatamodeld */; };
+		3B7729271FDEDD4B00CEC193 /* SportNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B7729251FDEDD4B00CEC193 /* SportNews.xcdatamodeld */; };
 		3B7729291FDEDD4B00CEC193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7729281FDEDD4B00CEC193 /* Assets.xcassets */; };
 		3B77292C1FDEDD4B00CEC193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B77292A1FDEDD4B00CEC193 /* LaunchScreen.storyboard */; };
 		3B7729371FDEDD4B00CEC193 /* NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7729361FDEDD4B00CEC193 /* NewsTests.swift */; };
@@ -85,7 +85,7 @@
 				3B7729281FDEDD4B00CEC193 /* Assets.xcassets */,
 				3B77292A1FDEDD4B00CEC193 /* LaunchScreen.storyboard */,
 				3B77292D1FDEDD4B00CEC193 /* Info.plist */,
-				3B7729251FDEDD4B00CEC193 /* News.xcdatamodeld */,
+				3B7729251FDEDD4B00CEC193 /* SportNews.xcdatamodeld */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7729211FDEDD4B00CEC193 /* ViewController.swift in Sources */,
-				3B7729271FDEDD4B00CEC193 /* News.xcdatamodeld in Sources */,
+				3B7729271FDEDD4B00CEC193 /* SportNews.xcdatamodeld in Sources */,
 				3B77291F1FDEDD4B00CEC193 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,11 +359,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = News/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinguyen.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -373,11 +374,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = News/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinguyen.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -446,13 +448,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3B7729251FDEDD4B00CEC193 /* News.xcdatamodeld */ = {
+		3B7729251FDEDD4B00CEC193 /* SportNews.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				3B7729261FDEDD4B00CEC193 /* News.xcdatamodel */,
 			);
 			currentVersion = 3B7729261FDEDD4B00CEC193 /* News.xcdatamodel */;
-			path = News.xcdatamodeld;
+			path = SportNews.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
