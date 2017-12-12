@@ -11,6 +11,10 @@
 		3B3F40461FDF5BBC00A2C324 /* News+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F40441FDF5BBC00A2C324 /* News+CoreDataProperties.swift */; };
 		3B3F40471FDF5BCD00A2C324 /* News+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F40431FDF5BBC00A2C324 /* News+CoreDataClass.swift */; };
 		3B3F40481FDF5BCD00A2C324 /* News+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F40441FDF5BBC00A2C324 /* News+CoreDataProperties.swift */; };
+		3B3F404A1FDF5CF600A2C324 /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F40491FDF5CF600A2C324 /* NewsManager.swift */; };
+		3B3F404B1FDF5CF600A2C324 /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F40491FDF5CF600A2C324 /* NewsManager.swift */; };
+		3B3F404D1FDF5D1E00A2C324 /* ManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F404C1FDF5D1E00A2C324 /* ManagerProvider.swift */; };
+		3B3F404E1FDF5D1E00A2C324 /* ManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F404C1FDF5D1E00A2C324 /* ManagerProvider.swift */; };
 		3B77291F1FDEDD4B00CEC193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B77291E1FDEDD4B00CEC193 /* AppDelegate.swift */; };
 		3B7729241FDEDD4B00CEC193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7729221FDEDD4B00CEC193 /* Main.storyboard */; };
 		3B7729291FDEDD4B00CEC193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7729281FDEDD4B00CEC193 /* Assets.xcassets */; };
@@ -51,6 +55,8 @@
 /* Begin PBXFileReference section */
 		3B3F40431FDF5BBC00A2C324 /* News+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "News+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3B3F40441FDF5BBC00A2C324 /* News+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "News+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3B3F40491FDF5CF600A2C324 /* NewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsManager.swift; sourceTree = "<group>"; };
+		3B3F404C1FDF5D1E00A2C324 /* ManagerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerProvider.swift; sourceTree = "<group>"; };
 		3B77291B1FDEDD4B00CEC193 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B77291E1FDEDD4B00CEC193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7729231FDEDD4B00CEC193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +179,8 @@
 			children = (
 				3B77294C1FDEE43100CEC193 /* NetworkServiceManager.swift */,
 				3B77296B1FDEE7A500CEC193 /* DataManager.swift */,
+				3B3F40491FDF5CF600A2C324 /* NewsManager.swift */,
+				3B3F404C1FDF5D1E00A2C324 /* ManagerProvider.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -337,6 +345,8 @@
 			files = (
 				3B77294D1FDEE43100CEC193 /* NetworkServiceManager.swift in Sources */,
 				3B77296C1FDEE7A500CEC193 /* DataManager.swift in Sources */,
+				3B3F404D1FDF5D1E00A2C324 /* ManagerProvider.swift in Sources */,
+				3B3F404A1FDF5CF600A2C324 /* NewsManager.swift in Sources */,
 				3B3F40461FDF5BBC00A2C324 /* News+CoreDataProperties.swift in Sources */,
 				3B7729431FDEE24F00CEC193 /* MainViewController.swift in Sources */,
 				3B7729801FDEEA7A00CEC193 /* SportNews.xcdatamodeld in Sources */,
@@ -354,7 +364,9 @@
 			files = (
 				3B7729371FDEDD4B00CEC193 /* NewsTests.swift in Sources */,
 				3B77295D1FDEE57800CEC193 /* Resource.swift in Sources */,
+				3B3F404B1FDF5CF600A2C324 /* NewsManager.swift in Sources */,
 				3B77296A1FDEE77400CEC193 /* DataStack.swift in Sources */,
+				3B3F404E1FDF5D1E00A2C324 /* ManagerProvider.swift in Sources */,
 				3B7729441FDEE24F00CEC193 /* MainViewController.swift in Sources */,
 				3B3F40481FDF5BCD00A2C324 /* News+CoreDataProperties.swift in Sources */,
 				3B3F40471FDF5BCD00A2C324 /* News+CoreDataClass.swift in Sources */,
