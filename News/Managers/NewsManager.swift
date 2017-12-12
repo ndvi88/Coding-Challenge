@@ -50,7 +50,6 @@ class NewsManager {
 		}
 		
 		let resource = Resource<Void>(url: urlRequest) { dict in
-			print(dict)
 			guard let result = dict as? JSONDictionary, let data = result["articles"] as? [JSONDictionary] else { return nil }
 			
 			self.dataManager.deleteWithEntity(News.self)
