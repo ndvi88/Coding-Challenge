@@ -44,6 +44,11 @@ class MainViewController: UITableViewController {
 		viewModel.load()
 	}
 	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == String(describing: DetailViewController.self), let desVC = segue.destination as? DetailViewController {
+			desVC.viewModel = DetailViewModel(url: viewModel.selectedNews?.url)
+		}
+	}
 }
 extension MainViewController {
 	
@@ -60,6 +65,11 @@ extension MainViewController {
 		return cell
 	}
 	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		viewModel.selectedNews = viewModel.listOfNews.value[indexPath.row]
+		self.performSegue(withIdentifier: String(describing: DetailViewController.self), sender: self)
+		tableView.deselectRow(at: indexPath, animated: true)
+	}
 }
 
 private extension MainViewController {

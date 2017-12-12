@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -82,6 +83,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="News" id="UNQ-Bn-fOM"/>
+                    <connections>
+                        <segue destination="pV4-g7-zNo" kind="show" identifier="DetailViewController" id="KdS-ZA-YTB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmp-P8-zRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,6 +113,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQz-zB-pBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="394" y="143"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="62y-AI-Llm">
+            <objects>
+                <viewController id="pV4-g7-zNo" customClass="DetailViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gt7-oH-qEh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="JVV-vR-w1I">
+                                <rect key="frame" x="169" y="283" width="37" height="37"/>
+                                <color key="color" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JVV-vR-w1I" firstAttribute="centerY" secondItem="gt7-oH-qEh" secondAttribute="centerY" id="oZ8-kY-zdy"/>
+                            <constraint firstItem="JVV-vR-w1I" firstAttribute="centerX" secondItem="gt7-oH-qEh" secondAttribute="centerX" id="q9U-9R-0TY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qyk-aK-pN7"/>
+                    </view>
+                    <connections>
+                        <outlet property="spinner" destination="JVV-vR-w1I" id="VgC-qT-7LS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RMM-Pr-a1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893.5999999999999" y="142.57871064467767"/>
         </scene>
     </scenes>
 </document>
